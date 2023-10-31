@@ -1,20 +1,18 @@
 package com.ebay.developer.tests.crossBrowser;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomePageLoadingSpecTests {
 
 	public static void main(String[] args) {
-		final String BASE_URL = "https://rahulshettyacademy.com/";
-		final String HOMT_TITLE = "Selenium, API Testing, Software Testing & More QA Tutorials | Rahul Shetty Academy";
+		final Duration WAIT_TIME = Duration.ofSeconds(4, -999_999_999);
+		
 		
 		// this will save a few seconds for download remotely every time
-		System.setProperty("webdriver.chrome.driver", "/home/emy/eclipse-workspace/chromedriver");
 		
-		WebDriver driver = new ChromeDriver();
-		
-		driver.get(BASE_URL);
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
