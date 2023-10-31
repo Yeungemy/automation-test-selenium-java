@@ -1,8 +1,10 @@
-package com.ebay.developer.tests;
+package com.ebay.developer.tests.crossBrowser;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CrossBrowserTest {
+public class HomePageLoadingSpecTests {
+
 	public static void main(String[] args) {
 		final String BASE_URL = "https://rahulshettyacademy.com/";
 		final String HOMT_TITLE = "Selenium, API Testing, Software Testing & More QA Tutorials | Rahul Shetty Academy";
